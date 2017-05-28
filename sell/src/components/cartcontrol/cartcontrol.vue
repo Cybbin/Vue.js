@@ -1,5 +1,5 @@
 <template>
-	<div class="cartcontrol">
+	<div class="cartcontrol" @click.stop.prevent>
 		<transition name="move">
 			<div class="cart-decrease" v-show="food.count>0" @click="decreaseCart($event)">
 				<span class="icon-remove_circle_outline inner"></span>
@@ -20,7 +20,7 @@ export default {
 	},
 	methods: {
 		addCart(event) {
-			if (event._constructed) {
+			if (!event._constructed) {
 				return;
 			}
 			if (!this.food.count) {
@@ -28,9 +28,10 @@ export default {
 			} else {
 				this.food.count++;
 			}
+			this.$emit('cart_add', event.target);
 		},
 		decreaseCart(event) {
-			if (event._constructed) {
+			if (!event._constructed) {
 				return;
 			}
 			if (this.food.count) {

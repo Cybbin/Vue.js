@@ -57,9 +57,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="detail-close" @click="hideDetail">
-					X
-				</div>
+				<div class="detail-close icon-close" @click="hideDetail"></div>
 			</div>
 		</transition>
 
@@ -246,7 +244,7 @@
 		filter: blur(10px);
 	}
 	
-	.detail {
+	.header .detail {
 		position: fixed;
 		z-index: 100;
 		top: 0;
@@ -257,62 +255,62 @@
 		background: rgba(7, 17, 27, 0.8);
 	}
 	
-	.detail .detail-wrapper {
+	.header .detail .detail-wrapper {
 		min-height: 100%;
 		width: 100%;
 	}
 	
-	.detail .detail-wrapper .detail-main {
+	.header .detail .detail-wrapper .detail-main {
 		margin-top: 64px;
 		padding-bottom: 64px;
 	}
 	
-	.detail .detail-wrapper .detail-main .name {
+	.header .detail .detail-wrapper .detail-main .name {
 		line-height: 16px;
 		font-weight: 700;
 		text-align: center;
 	}
 	
-	.detail .detail-wrapper .detail-main .star-wrapper {
+	.header .detail .detail-wrapper .detail-main .star-wrapper {
 		margin-top: 18px;
 		padding: 2px 0;
 		text-align: center;
 	}
 	
-	.detail .detail-wrapper .detail-main .title {
+	.header .detail .detail-wrapper .detail-main .title {
 		display: flex;
 		width: 80%;
 		margin: 30px auto 24px auto;
 	}
 	
-	.detail .detail-wrapper .detail-main .title .line {
+	.header .detail .detail-wrapper .detail-main .title .line {
 		flex: 1;
 		position: relative;
 		top: -6px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	}
 	
-	.detail .detail-wrapper .detail-main .title .text {
+	.header .detail .detail-wrapper .detail-main .title .text {
 		padding: 0 12px;
 		font-size: 14px;
 	}
 	
-	.detail .detail-wrapper .detail-main .supports {
+	.header .detail .detail-wrapper .detail-main .supports {
 		width: 80%;
 		margin: 0 auto;
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item {
+	.header .detail .detail-wrapper .detail-main .supports .support-item {
 		padding: 0 12px;
 		margin-bottom: 12px;
 		font-size: 0;
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item:last-child {
+	.header .detail .detail-wrapper .detail-main .supports .support-item:last-child {
 		margin-bottom: 0;
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .icon {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .icon {
 		display: inline-block;
 		width: 16px;
 		height: 16px;
@@ -322,43 +320,43 @@
 		background-repeat: no-repeat;
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .decrease {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .decrease {
 		background-image: url(decrease_2@2x.png);
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .discount {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .discount {
 		background-image: url(discount_2@2x.png);
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .guarantee {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .guarantee {
 		background-image: url(guarantee_2@2x.png);
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .invoice {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .invoice {
 		background-image: url(invoice_2@2x.png);
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .special {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .special {
 		background-image: url(special_2@2x.png);
 	}
 	
-	.detail .detail-wrapper .detail-main .supports .support-item .text {
+	.header .detail .detail-wrapper .detail-main .supports .support-item .text {
 		font-size: 12px;
 		line-height: 16px;
 	}
 	
-	.detail .detail-wrapper .detail-main .bulletin {
+	.header .detail .detail-wrapper .detail-main .bulletin {
 		width: 80%;
 		margin: 0 auto;
 	}
 	
-	.detail .detail-wrapper .detail-main .bulletin .content {
+	.header .detail .detail-wrapper .detail-main .bulletin .content {
 		padding: 0 12px;
 		line-height: 24px;
 		font-size: 12px;
 	}
 	
-	.detail .detail-close {
+	.header .detail .detail-close {
 		position: relative;
 		height: 32px;
 		width: 32px;
