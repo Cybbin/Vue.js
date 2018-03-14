@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue的数据双向绑定</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<h1>{{name}}</h1>
+			<input id="inp" v-model="name">
+			<br>
+			<br>
+			<br>
+			<button v-on:click="show">change to world!</button>
+		</div>
+		<script type="text/javascript" src="./js/observe.js"></script>
+		<script type="text/javascript" src="./js/watcher.js"></script>
+		<script type="text/javascript" src="./js/compile.js"></script>
+		<script type="text/javascript" src="./js/myvue.js"></script>
+
+		<script>
+			var my = new myvue({
+				el: '#app',
+				data: {
+					name: 'hello'
+				},
+				methods:{
+					show(){
+						this.name="world"
+					}
+				},
+				mounted(){
+					console.log('mounted complete');
+				}
+			});
+		</script>
+	</body>
+
+</html>
